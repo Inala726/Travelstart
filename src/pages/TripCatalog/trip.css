@@ -25,3 +25,55 @@
 .overlay h3{
     font-size: 35px;
 }
+.beach-div{
+    width: 400px;
+    height: 300px;
+}
+.beach-div img{
+    width: 300px;
+    border-radius: 2px;
+    /* height: 300px; */
+}
+.beach-div p{
+    color: white;
+}
+.comment-div{
+    display: flex;
+    gap: 20px;
+}
+.dark-comment{
+    width: 300px;
+    background-color: rgb(52, 50, 50);
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+.beach-all{
+    display: flex;
+    gap: 80px;
+    width: 1070px;
+    margin: auto;
+    /* margin-left: 100px; */
+    /* padding: 10px 100px; */
+}
+.tour-div{
+    height: 400px;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.tour-div p{
+    color: white;
+}
+.tour-div img {
+    height: 400px;
+    width: 520px;
+}
+.bruck-div{
+    width:520px;
+    background-color: rgb(52, 50, 50);
+    padding: 15px 20px;
+}
+.tour-all{
+    display: flex;
+    gap: 245px;
+}
