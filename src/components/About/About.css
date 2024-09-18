@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+ * {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+    color: white;
+}
+.about-section {
+  position: relative;
+  background-image: url('../../assets/banner.avif');
+  height: 50vh; /* Adjust height based on design */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute; /* Ensures overlay is over the background */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover entire width */
+    height: 100%; /* Cover entire height */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.663), rgb(0, 0, 0));/* Darken the background with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay h1 {
+    font-size: 48px; /* Adjust title size */
+    font-weight: 700; /* Bold title */
+    letter-spacing: 2px; /* Add letter spacing */
+    text-transform: uppercase; /* Uppercase for "About Us" */
+  }
+  
+  .overlay p {
+    color: #f0e68c; /* Light yellow color */
+    font-size: 16px; /* Adjust breadcrumb font size */
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  
+  .overlay a {
+    color: #fff; /* White link color */
+    text-decoration: none;
+  }
+  
+  .overlay a:hover {
+    color: #f0e68c; /* Yellow on hover */
+  }
+
+  .aboutmiddle {
+     margin-top: 150px;
+     padding-left: 100px;
+     padding-right: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 200px;
+  }
+
+  .jeep {
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .leftside {
+    width: 40%;
+  }
+
+  .valuehead {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .experience {
+    width: 43%;
+  }
+
+  .valuetext {
+    font-size: 13px;
+  }
+
+  .number {
+    font-size: 100px;
+    color: seagreen;
+  }
+
+  .year {
+    font-size: 13px;
+    color: white;
+  }
+
+  .years {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topleftflex {
+    display: flex;
+    gap: 60px;
+  }
+
+  .themission {
+    margin-top: 250px;
+  }
+
+  .missionhead {
+    font-size: 40px;
+    color: seagreen;
+  }
+
+  .bottomleft {
+    width: 50%;
+  }
+
+  .mission {
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+
+  .rightside {
+    width: 60%;
+  }
+
+  .plane {
+     width: 67%;
+     border-radius: 5px;
+  }
+  
+  .product {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .historysection{
+    margin-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .excellent {
+    color: seagreen;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .genius {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .name {
+     font-size: 18px;
+  }
+
+  .firstfounder {
+    border-radius: 5px;
+  }
+
+  .founders {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .esteemed {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .trust {
+    margin-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .trusthead {
+    text-align: center;
+    font-size: 40px;
+    color: seagreen;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    column-gap: 270px;
+    margin-top: 50px;
+  }
+
+  .about-section,
+.aboutmiddle,
+.historysection,
+.trust,
+.missionhead,
+.partners {
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Adjust animation delay if needed for staggered effects */
+.about-section {
+  animation-delay: 0.2s;
+}
+
+.aboutmiddle {
+  animation-delay: 0.4s;
+}
+
+.historysection {
+  animation-delay: 0.6s;
+}
+
+.trust {
+  animation-delay: 0.8s;
+}
+
+.missionhead {
+  animation-delay: 1s;
+}
+
+.partners {
+  animation-delay: 1.2s;
+}
+
+  @media screen and (max-width: 1750px){
+      .leftside {
+        width: 50%;
+      }
+  }
+
+  @media screen and (max-width: 1700px){
+       .founders {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        row-gap: 40px;
+       }
+  }
+
+  @media screen and (max-width: 1400px){
+      .logo {
+        width: 100%;
+      }
+
+      .missionhead {
+        font-size: 30px;
+      }
+
+      .plane {
+        width: 100%;
+      }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1240px){
+      .aboutmiddle {
+        gap: 30px;
+      }
+
+      .partners {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }
+
+  @media screen and (max-width: 1170px){
+    .about-section, .aboutmiddle, .historysection, .trust {
+           padding-left: 50px;
+           padding-right: 50px;
+    }
+  }
+  @media screen and (max-width: 1120px){
+      .founders {
+        display: flex;
+        flex-direction: column;
+      }
+  }
+
+  @media screen and (max-width: 845px){
+      .partners {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+      }
+
+      .logo {
+        width: 60%;
+        
+      }
+  }
+
+  @media screen and (max-width: 680px){
+    .aboutmiddle {
+        flex-direction: column;
+    }
+
+    .leftside {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 618px){
+      .logo {
+        width: 80%;
+      }
+  }
+
+  @media screen and (max-width: 590px){
+      .firstfounder {
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 450px){
+      .logo {
+        width: 90%;
+      }
+
+      .partners {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .excellent {
+        font-size: 20px;
+      }
+
+      .genius {
+        font-size: 15px;
+      }
+
+      .content {
+        font-size: 12px;
+      }
+
+      .trusthead {
+        font-size: 26px;
+      }
+  }
+
+  @media screen and (max-width: 400px){
+      .topleftflex {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .experience {
+        width: 100%;
+      }
+
+      .bottomleft {
+        width: 100%;
+      }
+  }
