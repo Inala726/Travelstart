@@ -1,11 +1,13 @@
-
-
-import React from 'react'
+import Nav from './Components/Navbar/Nav'
+import Homepage from './Pages/Homepage/Homepage'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
     <>
-      <p>Techwiz project</p>
+      <Nav></Nav>
+      <Homepage></Homepage>
+      <Footer></Footer>
     </>
   )
 }
