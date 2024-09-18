@@ -24,12 +24,39 @@ const TripCatalog = () => {
               <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
               <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
               <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
-              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
-              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
-              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
-              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
-              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
+              </div>
+                  
+              {/* <div className='tour-all'>
+              <div className='tour-div'>
+                <img className='' src={VBeach} alt="" />
+                <div className='bruck-div'>
+                <p>Inns Bruck Tourismus introduces worm card to</p>
+                <p>travelers</p>
+                <div className='comment-div'>
+                  <p>July 15 2021</p>
+                  <p>No comments</p>
+                </div>
+                </div>               
+              </div>
 
+              <div className='tour-div'>
+                <img className='' src={VBeach} alt="" />
+                <div className='bruck-div'>
+                <p>Inns Bruck Tourismus introduces worm card to</p>
+                <p>travelers</p>
+                <div className='comment-div'>
+                  <p>July 15 2021</p>
+                  <p>No comments</p>
+                </div>
+                </div>               
+              </div>
+            </div> */}
+                 <div className="beach-all">
+
+              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
+              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
+              <Trip image = {VBeach} description="We offer the perfect tour locations." activities="Skiing and paragliding" price="Funding a full tour costs $5000"/>
+              </div>
              
              {/* <div className='beach-div'>
                 <img src={VBeach} alt="" />
@@ -133,7 +160,7 @@ const TripCatalog = () => {
                 </div>
                 </div>
                */}
-              </div>
+              {/* </div> */}
             </div>
             
     </div>
