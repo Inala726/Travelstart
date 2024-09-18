@@ -1,13 +1,13 @@
-
-
+import "./App.css"
 import React from 'react'
+import TripCatalog from './pages/TripCatalog/TripCatalog'
 
 const App = () => {
   return (
     <>
 
     <div className="MAIN">
-    <p>Techwiz project</p>
+    <TripCatalog/>
     </div>
       
     </>
