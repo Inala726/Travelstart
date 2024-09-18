@@ -138,6 +138,8 @@ const TripCatalog = () => {
                 </div>
               
               </div>
+
+              
             </div>
             
     </div>
