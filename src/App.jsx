@@ -5,7 +5,11 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <p>Techwiz project</p>
+
+    <div className="MAIN">
+    <p>Techwiz project</p>
+    </div>
+      
     </>
   )
 }
