@@ -151,6 +151,10 @@ const Great = () => {
             </section>
 
             <section>
+                <h1>Accomodation</h1>
+            </section>
+
+            {/* <section>
               <h1>Activities to do In Asia</h1>
               <div>
                 <div>
@@ -197,7 +201,7 @@ const Great = () => {
                      <div></div>
                 </div>
               </div>
-            </section>
+            </section> */}
         </div>
         </>
     )
