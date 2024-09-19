@@ -1,14 +1,12 @@
-
-
 import React from 'react'
-
+import './App.css'
+import Contact from './components/Contact'
 const App = () => {
   return (
     <>
-      <p>Techwiz project</p>
+      <Contact/>
     </>
   )
 }
 
 export default App
-
