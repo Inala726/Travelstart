@@ -1,0 +1,10 @@
+.locate {
+  display: flex;
+  flex-direction: column;
+}
+.locate-text {
+  margin-bottom: 15px;
+}
+.st {
+  font-size: 14px;
+}
