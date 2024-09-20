@@ -46,7 +46,7 @@ const Contact = () => {
           <p>Rivers State, Nigeria</p>
         </div>
         <div className="box">
-          <LuPhoneCall className="icon" />
+          <LuPhoneCall color = "rgb(20, 143, 162)" className="icon" />
           <h3>Phone Number(s)</h3>
           <p>(+234) 814 234 7750</p>
           <p>(+234) 808 097 5645</p>

@@ -1,22 +1,19 @@
-import "./App.css"
-import TripCatalog from './pages/TripCatalog/TripCatalog'
-import Great from "./pages/Great"
-import Accomodations from "./pages/Accomodation"
-import Homepage from "./pages/Homepage/Homepage"
+// import React from 'react'
+import "./App.css";
+// import About from "./Pages/About/About"
+// import Contact from './Pages/Contact/Contact'
+import ReviewPage from "./Pages/Review/Review";
+// import Nav from './Components/Navbar/Nav'
+// import Homepage from './Pages/Homepage/Homepage'
+// import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
     <>
-
-    <div className="MAIN">
-    {/* <Great/> */}
-    {/* <TripCatalog/> */}
-    {/* <Accomodations/> */}
-    <Homepage/>
-    </div>
- 
+    
+      <About/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -12,7 +12,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
         "date": "24-05-25",
-        "activity": "Hiking, Star Gazing, Bird Watching "
+        "activity": "Hiking, Star Gazing, Bird Watching ",
+        "destinationType": "Town"
     },
 
     {
@@ -28,7 +29,8 @@
         "tour": "Adventure Tour",
         "rating": "5",
         "date": "25-07-25",
-        "activity": "Swimming, Sight Seeing, Honeymoon"
+        "activity": "Swimming, Sight Seeing, Honeymoon",
+        "destinationType": "Beach area"
     },
     {
         "id": 3,   
@@ -43,7 +45,8 @@
         "tour": "Luxury Tour",
         "rating": "4",
         "date": "26-04-25",
-        "activity": "Swimming, Sight Seeing, Surfing"
+        "activity": "Swimming, Sight Seeing, Surfing",
+        "destinationType": "City"
     },
     {
         "id": 4,   
@@ -58,7 +61,8 @@
         "tour": "Luxury Tour",
         "rating": "5",
         "date": "30-05-25",
-        "activity": "Sight Seeing, Shopping, Honeymoon"
+        "activity": "Sight Seeing, Shopping, Honeymoon",
+        "destinationType": "City"
     },
     {
         "id": 5,   
@@ -73,7 +77,8 @@
         "tour": "Luxury Tour",
         "rating": "4",
         "date": "15-11-25",
-        "activity": "Sight Seeing, Shopping"
+        "activity": "Sight Seeing, Shopping",
+        "destinationType": "City"
     },
     {
         "id": 6,   
@@ -88,7 +93,8 @@
         "tour": "Family Tour",
         "rating": "5",
         "date": "10-06-25",
-        "activity": "Sight Seeing, Relaxation, Food exploration"
+        "activity": "Sight Seeing, Relaxation, Food exploration",
+        "destinationType": "Town"
     },
     {
         "id": 7,   
@@ -103,7 +109,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
         "date": "31-11-25",
-        "activity": "Hiking, Star Gazing, Bird Watching, Swimming "
+        "activity": "Hiking, Star Gazing, Bird Watching, Swimming ",
+        "destinationType": "Natural area"
     },
     {
         "id": 8,   
@@ -118,7 +125,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
        "date": "31-11-25",
-       "activity": "Hiking, Bird Watching, Swimming "
+       "activity": "Hiking, Bird Watching, Swimming ",
+       "destinationType": "Natural area"
     },
     {
         "id": 9,   
@@ -133,7 +141,8 @@
         "tour": "Luxury Tour",
         "rating": "5",
         "date": "31-12-25",
-        "activity": "Relaxation, Sight Seeing, Exploring Marine reserves"
+        "activity": "Relaxation, Sight Seeing, Exploring Marine reserves",
+        "destinationType": "Beach area"
     },
     {
         "id": 10,   
@@ -148,7 +157,8 @@
         "tour": "Cultural Tour",
         "rating": "4",
         "date": "13-07-25",
-        "activity": "Sight Seeing, Relaxation, Food exploration, Enjoying traditional sega dance performance "
+        "activity": "Sight Seeing, Relaxation, Food exploration, Enjoying traditional sega dance performance ",
+        "destinationType": "Beach area"
     },
     {
         "id": 11,   
@@ -163,7 +173,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
         "date": "15-08-25",
-        "activity": "Kayaking, Sailing"
+        "activity": "Kayaking, Sailing",
+        "destinationType": "Beach area"
     },
     {
         "id": 12,   
@@ -178,7 +189,8 @@
         "tour": "Family Tour",
         "rating": "5",
         "date": "April - May",
-        "activity": "Sight Seeing"
+        "activity": "Sight Seeing",
+        "destinationType": "Natural area"
     },
     {
         "id": 13,   
@@ -193,7 +205,8 @@
         "tour": "Luxury Tour",
         "rating": "5",
         "date": "10-02-25",
-        "activity": "Honey moon"
+        "activity": "Honey moon",
+        "destinationType": "City"
     },
     {
         "id": 14,   
@@ -208,7 +221,8 @@
         "tour": "Luxury Tour",
         "rating": "5",
         "date": "14-09-15",
-        "activity": "Date nights, Food exploration, Sight Seeing, Honeymoon"
+        "activity": "Date nights, Food exploration, Sight Seeing, Honeymoon",
+        "destinationType": "City"
     },
     {
         "id": 15,  
@@ -223,7 +237,8 @@
         "tour": "Cultural Tour",
         "rating": "4",
         "date": "21-09-25",
-        "activity": "Culture exploration"
+        "activity": "Culture exploration",
+        "destinationType": "City"
     },
     {
         "id": 16,   
@@ -238,7 +253,8 @@
         "tour": "Family Tour",
         "rating": "4",
         "date": "23-05-24",
-        "activity": "Sight Seeing, Food exploration"
+        "activity": "Sight Seeing, Food exploration",
+        "destinationType": "Town"
     },
     {
         "id": 17,   
@@ -253,7 +269,8 @@
         "tour": "Family Tour",
         "rating": "5",
         "date": "19-10-25",
-        "activity": "Honeymoon, Sight Seeing, Surfing"
+        "activity": "Honeymoon, Sight Seeing, Surfing",
+        "destinationType": "Beach area"
     },
     {
         "id": 18,   
@@ -268,7 +285,8 @@
         "tour": "Family Tour",
         "rating": "4",
         "date": "15-06-25",
-        "activity": "Sight Seeing, Swimming"
+        "activity": "Sight Seeing, Swimming",
+        "destinationType": "Beach area"
     },
     {
         "id": 19,   
@@ -283,7 +301,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
         "date": "23-11-25",
-        "activity": "Penguin Colonies, Research Stations."
+        "activity": "Penguin Colonies, Research Stations.",
+        "destinationType": "Natural area"
     },
     {
         "id": 20,   
@@ -298,7 +317,8 @@
         "tour": "Adventure Tour",
         "rating": "4",
         "date": "05-10-25",
-        "activity": "Whale Sighting, Majestic Glaciers"
+        "activity": "Whale Sighting, Majestic Glaciers",
+        "destinationType": "Natural area"
     },
     {
         "id": 21,   
@@ -313,6 +333,7 @@
         "tour": "Cultural Tour",
         "rating": "4",
         "date": "06-09-25",
-        "activity": "Albatross Sightings"
+        "activity": "Albatross Sightings",
+        "destinationType": "Town"
     }
 ]
