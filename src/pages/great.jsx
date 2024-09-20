@@ -1,10 +1,10 @@
 import './great.css'
 import Vmount from "../assets/mountain-img.jpg"
-import Vresort from "../assets/house-resort.jpg"
+import Vresort from "../assets/header.jpg"
+import Vhotel from "../assets/house-resort.jpg"
 import Vgif from "../assets/giphy.webp"
 import Vbus from "../assets/giphy2.webp"
-import Vflight from "../assets/giphy3.webp"
-import Vflight2 from "../assets/giphy4.webp"
+import Vflight from "../assets/giphy4.webp"
 import Vimg1 from "../assets/1-img.jpg"
 import Vimg2 from "../assets/2-img.jpg"
 import Vimg3 from "../assets/3-img.jpg"
@@ -12,6 +12,16 @@ import Vimg4 from "../assets/4-img.jpg"
 import Vimg5 from "../assets/5-img.jpg"
 import Vimg6 from "../assets/6-img.jpg"
 import Vimg7 from "../assets/7-img.jpg"
+import Vresort1 from "../assets/resort1.jpg"
+import Vresort2 from "../assets/resort2.jpg"
+import Vresort3 from "../assets/resort3.jpg"
+import Vresort4 from "../assets/resort4.jpg"
+
+import Vfamily from "../assets/family-img.jpg"
+import Vculture from "../assets/cultural-img.jpg"
+import Vadventure from "../assets/adventure-img.jpg"
+import Vluxury from "../assets/luxury-img.jpg"
+
 // import Vimg1 from "../assets/1-img.jpg"
 
 const Great = () => {
@@ -116,7 +126,7 @@ const Great = () => {
 
                 <div className='locations-div'>
                     <div className='bck-image' style={{
-            backgroundImage: `url(${Vflight2})`,
+            backgroundImage: `url(${Vflight})`,
             backgroundRepeat: "none",
             backgroundSize: "cover",
             backgroundPosition: "bottom"
@@ -135,7 +145,8 @@ const Great = () => {
                        
                     </div>
 
-                 <div className='bck-image' style={{
+                 <div className='bck-image' 
+                 style={{
             backgroundImage: `url(${Vbus})`,
             backgroundRepeat: "none",
             backgroundSize: "cover",
@@ -150,9 +161,51 @@ const Great = () => {
                 {/* <p className='seemore-txt'>see more</p> */}
             </section>
 
-            <section>
-                <h1>Accomodation</h1>
-            </section>
+            <section className='tour-box'>
+                <h1>Tours</h1>
+                 <div className='tour-all'>
+                    <div className='first-pos' 
+                    style={{
+                        backgroundImage: `url(${Vfamily})`,
+                        backgroundRepeat: "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "bottom"
+                        }}
+                     >
+                       <p>Family tour</p>
+                    </div>
+                    <div className='sec-pos'
+                    style={{
+                        backgroundImage: `url(${Vculture})`,
+                        backgroundRepeat: "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "bottom"
+                        }}
+                    >
+                       <p>Cultural tour</p>
+                    </div>
+                    <div className='third-pos'
+                    style={{
+                        backgroundImage: `url(${Vadventure})`,
+                        backgroundRepeat: "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "bottom"
+                        }}
+                    >
+                    <p>Adventure tour</p>
+                    </div>
+                    <div className='fourth-pos'
+                    style={{
+                        backgroundImage: `url(${Vluxury})`,
+                        backgroundRepeat: "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "bottom"
+                        }}
+                    >
+                    <p>Luxury tour</p>
+                    </div>
+                 </div>
+            </section> 
 
             {/* <section>
               <h1>Activities to do In Asia</h1>
@@ -202,6 +255,54 @@ const Great = () => {
                 </div>
               </div>
             </section> */}
+
+            <div className="accomodationDiv">
+                <h1 style={{
+                    paddingBottom: "35px"
+                }}>Accomodations</h1>
+            <div className="accomodation">
+                <div className="accom dat1"
+                style={{
+                    backgroundImage: `url(${Vresort1})`,
+                    backgroundRepeat: "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom"
+                    }}
+                >
+                  
+                </div>
+                <div className="accom dat2"
+                style={{
+                    backgroundImage: `url(${Vresort2})`,
+                    backgroundRepeat: "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom"
+                    }}
+                >
+    
+                </div>
+                <div className="accom"
+                style={{
+                    backgroundImage: `url(${Vresort3})`,
+                    backgroundRepeat: "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom"
+                    }}
+                >
+                   
+                </div>
+                <div className="accom"
+                style={{
+                    backgroundImage: `url(${Vresort4})`,
+                    backgroundRepeat: "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom"
+                    }}
+                >
+                 
+                </div>
+            </div>
+            </div>
         </div>
         </>
     )

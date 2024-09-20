@@ -1,16 +1,21 @@
-// import React from 'react'
-import About from './components/About/About'
-import './App.css'
-// import Contact from './components/Contact'
-// import Nav from './Components/Navbar/Nav'
-// import Homepage from './Pages/Homepage/Homepage'
-// import Footer from './Components/Footer/Footer'
+import "./App.css"
+import TripCatalog from './pages/TripCatalog/TripCatalog'
+import Great from "./pages/Great"
+import Accomodations from "./pages/Accomodation"
 
 const App = () => {
   return (
     <>
-    
-      <About/>
+
+    {/* <div className="MAIN">
+    <TripCatalog/>
+    </div> */}
+    <div className="MAIN">
+    <Great/>
+    <TripCatalog/>
+    <Accomodations/>
+    </div>
+ 
     </>
   )
 }
