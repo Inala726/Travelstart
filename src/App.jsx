@@ -1,22 +1,18 @@
-import "./App.css"
-import React from 'react'
-import TripCatalog from './pages/TripCatalog/TripCatalog'
-import Great from "./pages/great"
+// import React from 'react'
+import About from './components/About/About'
+import './App.css'
+// import Contact from './components/Contact'
+// import Nav from './Components/Navbar/Nav'
+// import Homepage from './Pages/Homepage/Homepage'
+// import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
     <>
-
-    {/* <div className="MAIN">
-    <TripCatalog/>
-    </div> */}
-    <div className="MAIN">
-    <Great/>
-    </div>
- 
+    
+      <About/>
     </>
   )
 }
 
 export default App
-
