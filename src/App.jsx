@@ -8,12 +8,12 @@ const App = () => {
   return (
     <>
 
-    {/* <div className="MAIN">
-    <TripCatalog/>
-    </div> */}
     <div className="MAIN">
-    <Great/>
-    <Accomodations/>
+    <TripCatalog/>
+    </div>
+    <div className="MAIN">
+    {/* <Great/> */}
+    {/* <Accomodations/> */}
     </div>
  
     </>
