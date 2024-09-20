@@ -10,7 +10,14 @@ import ReviewPage from "./Pages/Review/Review";
 const App = () => {
   return (
     <>
-<ReviewPage/>
+
+    <div className="MAIN">
+    {/* <Great/> */}
+    {/* <TripCatalog/> */}
+    {/* <Accomodations/> */}
+    <Homepage/>
+    </div>
+ 
     </>
   );
 };
