@@ -2,6 +2,7 @@ import "./App.css"
 import TripCatalog from './pages/TripCatalog/TripCatalog'
 import Accomodations from "./pages/Accomodation"
 import Great from "./pages/great"
+import Homepage from "./pages/Homepage/Homepage"
 
 const App = () => {
   return (
@@ -13,10 +14,10 @@ const App = () => {
     {/* <div className="MAIN">
     <Great/> 
     </div> */}
-    <div className="MAIN">
+    {/* <div className="MAIN">
  <Accomodations/>
-    </div>
-   
+    </div> */}
+   <Homepage/>
     </>
   )
 }
