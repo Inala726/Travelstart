@@ -62,13 +62,15 @@
     width: 90%;
     height: max-content ;
     margin: auto;
-    /* border: solid red; */
-    grid-auto-rows: 350px 370px;
     grid-gap: 25px;
-    grid-auto-flow: dense;
 }
-.one{
-    grid-column: span 2;
+
+
+
+@media screen and (max-width: 800px) {
+    .tours{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (max-width: 650px) {
     .tours{
