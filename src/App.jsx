@@ -7,12 +7,12 @@ const App = () => {
   return (
     <>
 
-    {/* <div className="MAIN">
-    <TripCatalog/>
-    </div> */}
     <div className="MAIN">
-    <Great/>
+    <TripCatalog/>
     </div>
+    {/* <div className="MAIN">
+    <Great/>
+    </div> */}
  
     </>
   )
