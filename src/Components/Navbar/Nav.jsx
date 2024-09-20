@@ -2,7 +2,7 @@ import './Nav.css'
 import { useState, useEffect } from 'react';
 import  Hamburger from '../Hamburger/Hamburger';
 
-function Nav() {
+const Nav = () => {
   
   
   const [isSticky, setIsSticky] = useState(false);

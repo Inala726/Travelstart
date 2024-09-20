@@ -5,11 +5,12 @@
     box-sizing: border-box;
     overflow-x: none;
 }
-nav{
+.nav1{
     width: 100%;
-    /* border: 1px solid white; */
+    border: 1px solid white;
+    background-color: transparent;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     color: white;
     display: flex;
     align-items: center;

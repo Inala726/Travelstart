@@ -10,10 +10,12 @@ import { FaCar } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import plane from '../../assets/plane.avif'
 import suitcase from '../../assets/newsuitcase.png'
+import Nav from '../../Components/Navbar/Nav';
 const About = () => {
   return (
     <>
       {/* About Section */}
+      <Nav/>  
       <section className="about-section">
         <div className="overlay">
           <h1>About Us</h1>

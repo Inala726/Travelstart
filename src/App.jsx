@@ -1,7 +1,8 @@
 // import React from 'react'
-import About from './components/About/About'
-import './App.css'
-// import Contact from './components/Contact'
+import "./App.css";
+// import About from "./Pages/About/About"
+// import Contact from './Pages/Contact/Contact'
+import ReviewPage from "./Pages/Review/Review";
 // import Nav from './Components/Navbar/Nav'
 // import Homepage from './Pages/Homepage/Homepage'
 // import Footer from './Components/Footer/Footer'
@@ -9,10 +10,9 @@ import './App.css'
 const App = () => {
   return (
     <>
-    
-      <About/>
+<ReviewPage/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
