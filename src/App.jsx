@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import About from './components/About/About'
 import './App.css'
 import Contact from './components/Contact'
 // import Nav from './Components/Navbar/Nav'
@@ -8,10 +9,8 @@ import Contact from './components/Contact'
 const App = () => {
   return (
     <>
-      <Contact/>
-      {/* <Nav></Nav>
-      <Homepage></Homepage>
-      <Footer></Footer> */}
+    
+      <About/>
     </>
   )
 }
