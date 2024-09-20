@@ -1,7 +1,7 @@
 import "./App.css"
 import React from 'react'
 import TripCatalog from './pages/TripCatalog/TripCatalog'
-import Great from "./pages/great"
+import Great from "./pages/Great"
 
 const App = () => {
   return (
