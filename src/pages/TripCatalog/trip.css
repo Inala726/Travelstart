@@ -33,7 +33,7 @@
     color: white;
 }
 .tour-div img {
-    height: 400px;
+    height: 60%;
     width: 100%;
 }
 .bruck-div{
@@ -46,7 +46,7 @@
     width: 100%;
     height: max-content;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     padding: 40px;
     /* border: solid darkblue; */

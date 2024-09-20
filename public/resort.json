@@ -68,7 +68,7 @@
         "id": 9,   
         "destination": "Belize",
         "title": "Find your Peace.",
-        "image": "/assets/JSON Images/belize.jpg",
+        "image": "/assets/JSON Images/belizetwo.jpg",
         "price": "5800",
         "description": "Belize: a tropical gem where the Caribbean meets lush jungles, and adventure awaits around every corner. From the stunning barrier reef, perfect for snorkeling and diving, to ancient Mayan ruins hidden in the rainforest, Belize is a playground for nature lovers and history buffs alike. Picture vibrant towns like San Pedro, where colorful buildings and friendly locals create a laid-back vibe, or explore the serene beauty of inland caves and waterfalls. With its rich cultural tapestry and diverse ecosystems, Belize offers a slice of paradise where every day feels like a new adventure waiting to unfold."
     },
@@ -86,7 +86,7 @@
         "title": "Visit an underrated vacation location and be beyond Wowed.",
         "image": "/assets/JSON Images/malawi.jpg",
         "price": "5800",
-        "description": "Malawi: the warm heart of Africa, where stunning landscapes meet the warmth of its people. Known for its breathtaking Lake Malawi—one of the largest and most beautiful lakes in the world—this country offers pristine beaches, vibrant fishing villages, and crystal-clear waters perfect for snorkeling and diving. Beyond the lake, explore lush mountains, wildlife-rich national parks, and bustling markets filled with colorful crafts. With its friendly locals and rich cultural heritage, Malawi invites you to experience the rhythm of life in a truly enchanting setting. Whether you’re hiking, birdwatching, or simply soaking in the sunsets, Malawi is a place where adventure and hospitality go hand in hand."
+        "description": "Malawi: the warm heart of Africa, where stunning landscapes meet the warmth of its people. Known for its breathtaking Lake Malawi—one of the largest and most beautiful lakes in the world—this country offers pristine beaches, vibrant fishing villages, and crystal-clear waters perfect for snorkeling and diving. Beyond the lake, explore lush mountains, wildlife-rich national parks, and bustling markets filled with colorful crafts. With its friendly locals and rich cultural heritage, Malawi invites you to experience the rhythm of life in a truly enchanting setting. Whether youre hiking, birdwatching, or simply soaking in the sunsets, Malawi is a place where adventure and hospitality go hand in hand."
     },
     {
         "id": 12,   
