@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+.cont {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  background-image: url("../../assets/saudi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.699);
+  background-blend-mode: darken;
+  background-position: center;
+  padding: 50px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.cont .text .num {
+  font-size: 52px;
+  font-weight: bolder;
+}
+.button {
+  font-size: 16px;
+  padding: 16px 56px;
+  background-color: rgb(20, 143, 162);
+  color: #ffe3dc;
+  margin-top: 48px;
+  border-radius: 30px;
+  border: none;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-4px) scale(1.1);
+  background-color: #ffe3dc;
+  color: rgb(20, 143, 162);
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 40px auto;
+    gap: 100px;
+}
