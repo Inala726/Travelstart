@@ -25,6 +25,7 @@ const Contact = () => {
       text: "Thank you for your feedback!",
       icon: "success",
     });
+    setFormData({name: "", email: "", message: ""})
   };
 
   return (
@@ -46,7 +47,7 @@ const Contact = () => {
           <p>Rivers State, Nigeria</p>
         </div>
         <div className="box">
-          <LuPhoneCall color = "rgb(20, 143, 162)" className="icon" />
+          <LuPhoneCall className="icon" />
           <h3>Phone Number(s)</h3>
           <p>(+234) 814 234 7750</p>
           <p>(+234) 808 097 5645</p>
