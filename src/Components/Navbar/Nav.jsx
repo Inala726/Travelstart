@@ -39,7 +39,7 @@ function Nav() {
   }, [lastScrollTop]);
   return (
     <>
-        <nav className='Nav'>
+        <nav className='Nav1'>
             <header className={`${isSticky ? 'cs_gescout_sticky' : ''} ${isVisible ? 'cs_gescout_show' : ''}`}>
             <div className="logo">
 
@@ -63,7 +63,7 @@ function Nav() {
               </div>  
 
               <div className="hamburger">
-                  {/* <Hamburger/> */}
+                  <Hamburger/>
               </div>
             </header>
         </nav>
