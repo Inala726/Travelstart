@@ -4,7 +4,7 @@ import About from "./Pages/About/About";
 import Contact from './Pages/Contact/Contact';
 import Homepage from "./Pages/Homepage/Homepage";
 import Nav from "./Components/Navbar/Nav";
-import Great from "./Pages/great";
+import Great from "./Pages/great/Great";
 import TripCatalog from "./Pages/TripCatalog/TripCatalog";
 
 const App = () => {
