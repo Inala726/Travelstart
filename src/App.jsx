@@ -3,9 +3,9 @@ import "./App.css";
 import About from "./Pages/About/About";
 import Contact from './Pages/Contact/Contact';
 import Homepage from "./Pages/Homepage/Homepage";
-import Nav from "./Components/Navbar/Nav";
-import Great from './Pages/great';
+import Great from './Pages/Great'
 import TripCatalog from "./Pages/TripCatalog/TripCatalog";
+import Nav from "./Components/Navbar/Nav";
 
 const App = () => {
   return (
