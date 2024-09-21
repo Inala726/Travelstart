@@ -1,39 +1,29 @@
 // import React from 'react'
+import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
-import Nav from "./Components/Navbar/Nav";
-// import About from "./Pages/About/About"
-// import Contact from './Pages/Contact/Contact'
+// import Nav from "./Components/Navbar/Nav";
+import About from "./Pages/About/About"
+import Contact from './Pages/Contact/Contact'
 // import ReviewPage from "./Pages/Review/Review";
-// import Nav from './Components/Navbar/Nav'
-import Homepage from './Pages/Homepage/Homepage'
+import Homepage from "./Pages/Homepage/Homepage";
+import Nav from "./Components/Navbar/Nav";
 // import Footer from './Components/Footer/Footer'
-
+import Great from "./Pages/great";
+import TripCatalaog from "./Pages/TripCatalog/TripCatalog"
 const App = () => {
-  return (
-    <>
-
-    {/* <div className="MAIN">
-    <TripCatalog/>
-    </div>  */}
-    {/* <div className="MAIN">
-    <Great/> 
-    </div> */}
-    {/* <div className="MAIN">
- <Accomodations/>
-    </div> */}
-   <Nav/>
-   <Homepage/>
-    {/* <Great/> */}
-    {/* <TripCatalog/> */}
-    {/* <Accomodations/> */}
-    {/* <div>
-    <Homepage/>
-    </div> */}
-    {/* <About/> */}
-    {/* </div> */}
+  return <>
+      <Router>
+        <Nav/>
+        <Routes>
+          <Route path="/" element = {<Homepage/>}/>
+          <Route path="/about" element = {<About/>}/>
+          <Route path="/contact" element= {<Contact/>}/>
+          <Route path="/countries" element= {<Great/>}/>
+          <Route path="/tc" element = {<TripCatalaog/>}/>
+        </Routes>
+      </Router>
  
-    </>
-  )
-}
+  </>;
+};
 
-export default App
+export default App;

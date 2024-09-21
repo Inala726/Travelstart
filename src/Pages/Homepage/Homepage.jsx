@@ -121,31 +121,7 @@ const Homepage = () => {
     </section>
 
     <section className='card'>
-        <div className="favourite-tour">
-        <p>Find your favourite tour</p>
-        <h2>In Our Small town, east luwu</h2>
-        </div>
-        <div className="town-east">
-          <div className='tour1'>
-            <span>TOUR 1</span>
-            <p>There will be a small</p>
-          </div>
-
-          <div className='tour2'>
-          <span>TOUR 2</span>
-          <p>There will be a small</p>
-          </div>
-
-          <div className='tour3'>
-          <span>TOUR 3</span>
-          <p>There will be a small</p>
-          </div>
-
-          <div className='tour4'>
-          <span>TOUR 4</span>
-          <p>There will be a small</p>
-          </div>
-        </div>
+        {}
     </section>
 
     <section className='bottom-line'>
