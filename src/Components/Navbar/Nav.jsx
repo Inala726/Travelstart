@@ -39,7 +39,7 @@ const Nav = () => {
   }, [lastScrollTop]);
   return (
     <>
-      <nav className="Nav">
+      <nav className="Nav1">
         <header
           className={`${isSticky ? "cs_gescout_sticky" : ""} ${
             isVisible ? "cs_gescout_show" : ""
@@ -78,7 +78,7 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="hamburger">{/* <Hamburger/> */}</div>
+          <div className="hamburger"><Hamburger/></div>
         </header>
       </nav>
     </>

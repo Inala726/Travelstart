@@ -11,9 +11,9 @@ function Footer() {
             <div className="footer-title">
             <p>Time to travel</p>
             </div>
-            <div className="location">
+            <div className="location1">
                 <div className="footer-circle"></div>
-                <span className='street'><p>123 Anywhere St., Any City 12345</p></span>
+                <span className='street'><p>123 Anywhere St., Any City</p></span>
             </div>
 
             <div className="location1">

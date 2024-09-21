@@ -152,6 +152,7 @@ const Homepage = () => {
                 </div>
             </div>
 
+
             <div className="blog-card">
                 <div className="media-content2">
                     
@@ -166,7 +167,7 @@ const Homepage = () => {
               </div>
     </section>
 
-    <section className='blog'>
+    <section className='blog100'>
             <div className="blog1">
             <div className="blog-play">
                 <div className="billboard">
@@ -237,12 +238,9 @@ const Homepage = () => {
           </div>
           <div className='whyus-card2'>
             <div className="cards">
-              <div className="card red">
-              </div>
-              <div className="card blue">
-              </div>
-              <div className="card green">
-              </div>
+              <div className="card red"></div>
+              <div className="card blue"></div>
+              <div className="card green"></div>
             </div>
 
           </div>
@@ -263,9 +261,7 @@ const Homepage = () => {
               </div>
 
 
-              <div className="hobbition-pic">
-               
-            </div>
+              <div className="hobbition-pic"></div>
           </div>
 
           <div className="trending">
