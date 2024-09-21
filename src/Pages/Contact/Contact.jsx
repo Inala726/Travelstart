@@ -15,6 +15,7 @@ const Contact = () => {
       text: "Thank you for your feedback!",
       icon: "success",
     });
+    setFormData({name: "", email: "", message: ""})
   };
 
   return (

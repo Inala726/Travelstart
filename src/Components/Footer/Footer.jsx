@@ -2,7 +2,7 @@ import  './Footer.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-function Footer() {
+const Footer = () => {
   return (
     <section className='footer'>
     <div className="column1">
@@ -68,7 +68,7 @@ function Footer() {
         </div>
     </div>
     <div className="column2">
-            Copyright © 2024 Pro Health. All rights reserved.
+            Copyright © 2024 Travel Smart. All rights reserved.
     </div>
 </section>
   )
