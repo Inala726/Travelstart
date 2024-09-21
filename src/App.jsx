@@ -6,7 +6,10 @@ import Trip from "./components/TriProps/Trip"
 // import TripCatalog from './pages/TripCatalog/TripCatalog'
 // import Great from "./pages/Great"
 // import Accomodations from "./pages/Accomodation"
+// import Great from "./pages/Great"
+import Accomodations from "./pages/Accomodation"
 import Homepage from "./pages/Homepage/Homepage"
+import About from "./pages/About/About"
 
 const App = () => {
   return (
@@ -28,6 +31,8 @@ const App = () => {
     {/* <div>
     <Homepage/>
     </div> */}
+    {/* <About/> */}
+    {/* </div> */}
  
     </>
   )
