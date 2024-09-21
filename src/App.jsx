@@ -1,15 +1,15 @@
 // import React from 'react'
 import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
-// import Nav from "./Components/Navbar/Nav";
 import About from "./Pages/About/About"
-import Contact from './Pages/Contact/Contact'
 // import ReviewPage from "./Pages/Review/Review";
 import Homepage from "./Pages/Homepage/Homepage";
 import Nav from "./Components/Navbar/Nav";
-// import Footer from './Components/Footer/Footer'
-import Great from "./Pages/great";
-import TripCatalaog from "./Pages/TripCatalog/TripCatalog"
+import Great from "./pages/Great";
+import TripCatalog from "./pages/TripCatalog/TripCatalog";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+
 const App = () => {
   return <>
       <Router>
@@ -19,8 +19,10 @@ const App = () => {
           <Route path="/about" element = {<About/>}/>
           <Route path="/contact" element= {<Contact/>}/>
           <Route path="/countries" element= {<Great/>}/>
-          <Route path="/tc" element = {<TripCatalaog/>}/>
+          <Route path="/tc" element = {<TripCatalog/>}/>
+          
         </Routes>
+        <Footer/>
       </Router>
  
   </>;
