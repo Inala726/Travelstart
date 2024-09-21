@@ -21,6 +21,7 @@ import Vfamily from "../assets/family-img.jpg"
 import Vculture from "../assets/cultural-img.jpg"
 import Vadventure from "../assets/adventure-img.jpg"
 import Vluxury from "../assets/luxury-img.jpg"
+import Hotel from "../../public/hotel.json"
 
 // import Vimg1 from "../assets/1-img.jpg"
 
@@ -269,7 +270,7 @@ const Great = () => {
                     backgroundPosition: "bottom"
                     }}
                 >
-                  
+                   RESORT
                 </div>
                 <div className="accom dat2"
                 style={{
@@ -279,7 +280,7 @@ const Great = () => {
                     backgroundPosition: "bottom"
                     }}
                 >
-    
+                      HOTEL
                 </div>
                 <div className="accom"
                 style={{
@@ -289,7 +290,7 @@ const Great = () => {
                     backgroundPosition: "bottom"
                     }}
                 >
-                   
+                 NORD
                 </div>
                 <div className="accom"
                 style={{
@@ -299,7 +300,7 @@ const Great = () => {
                     backgroundPosition: "bottom"
                     }}
                 >
-                 
+                  APARTMENT
                 </div>
             </div>
             </div>

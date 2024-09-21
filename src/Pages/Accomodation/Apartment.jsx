@@ -1,5 +1,8 @@
 import './Accomodation.css'
 import Vresort2 from "../assets/resort2.jpg"
+import Vme from "../../assets/Hotel-images/ukhotel.jpg"
+import Vme1 from "../../assets/Apartment-images/barca.webp"
+import Vme2 from "../../assets/Hotel-images/francehotel.jpg"
 
 const Accomodations = () => {
     return(

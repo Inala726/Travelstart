@@ -1,8 +1,7 @@
 import "./App.css"
 import TripCatalog from './pages/TripCatalog/TripCatalog'
-import Accomodations from "./pages/Accomodation"
+import Accomodations from "./pages/Accomodation/Accomodation"
 import Great from "./pages/great"
-import Homepage from "./pages/Homepage/Homepage"
 import Trip from "./components/TriProps/Trip"
 // import TripCatalog from './pages/TripCatalog/TripCatalog'
 // import Great from "./pages/Great"
@@ -13,22 +12,22 @@ const App = () => {
   return (
     <>
 
-    <div className="MAIN">
+    {/* <div className="MAIN">
     <TripCatalog/>
-    </div> 
+    </div>  */}
     {/* <div className="MAIN">
     <Great/> 
     </div> */}
-    {/* <div className="MAIN">
+    <div className="MAIN">
  <Accomodations/>
-    </div> */}
+    </div>
    {/* <Homepage/> */}
     {/* <Great/> */}
     {/* <TripCatalog/> */}
     {/* <Accomodations/> */}
-    <div>
+    {/* <div>
     <Homepage/>
-    </div>
+    </div> */}
  
     </>
   )

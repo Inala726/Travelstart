@@ -54,7 +54,7 @@ const TripCatalog = () => {
               //   name={location.title}
               // />
               <Trip 
-              image={Vlog} 
+              image={Vlog}
               description= "Love Love Love Love Depression Depression Dpression Depression Depression." 
               activities= "Paragliding, Skiing, Paragliding,  Skiing"
               price="4500"
