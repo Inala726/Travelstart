@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import "./triprops.css";
-import { IoIosMore } from "react-icons/io";
+// import { IoIosMore } from "react-icons/io";
 
 const Trip = (props) => {
   return (
@@ -20,7 +20,9 @@ const Trip = (props) => {
             </div>
             <h5>{props.destination}</h5>
            <h3>{props.name}</h3>
-              <p>{props.description}<IoIosMore className="icon" onClick={props.function} /></p>
+              <p>{props.description} 
+                {/* <IoIosMore className="icon" onClick={props.function} /> */}
+                </p>
               
               <div className="comment-div">
               <p>{props.activities}</p>

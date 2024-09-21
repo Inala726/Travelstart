@@ -110,6 +110,15 @@ const TripCatalog = () => {
             <h3>TOUR WITH US</h3>
           </div>
         </div>
+
+        <div className="sort-cart">
+          <p>Date</p>
+          <p>Price Range</p>
+          <p>Destination type</p>
+          <p>Duration</p>
+          <p>Rating</p>
+        </div>
+
         <div className="tripContent">
           <div className="beach-all">
             {filterTrips.map((location) => (

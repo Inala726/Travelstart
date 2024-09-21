@@ -53,7 +53,7 @@
 .tripContent{
     width: 100%; 
     height: max-content;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .beach-all{
     display: grid;
@@ -63,7 +63,17 @@
     margin: auto;
     grid-gap: 25px;
 }
-
+.sort-cart{
+    display: flex;
+    gap: 150px;
+    border: 1px solid gainsboro;
+    padding: 9px 80px;
+    /* background-color: rgb(2, 2, 15); */
+}
+.sort-cart p{
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 800px) {

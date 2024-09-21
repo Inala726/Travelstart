@@ -190,7 +190,8 @@
     height: 300px;
     /* border: 1px solid rgba(220, 220, 220, 0.388); */
     position: absolute;
-    left: 125px;
+    left: 10.5%;
+    /* left: 125px; */
     border-radius: 2px;
     cursor: pointer;
     transition: all ease-in-out .3s;
@@ -206,20 +207,22 @@
 }
 .first-pos p{
     color: white;
+    font-size: 16px;
 }
 .sec-pos{
     width: 19.5%;
     height: 300px;
     /* border: 1px solid rgba(220, 220, 220, 0.388); */
     position: absolute;
-    left: 375px;
+    /* left: 375px; */
+    left: 30.4%;
     top: 50px;
     border-radius: 2px;
     cursor: pointer;
     transition: all ease-in-out .3s;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+     align-items: end;  
     padding-bottom: 30px;
 }
 .sec-pos:hover{
@@ -229,13 +232,15 @@
 }
 .sec-pos p{
     color: white;
+    font-size: 16px;
 }
 .third-pos{
     width: 19.5%;
     height: 300px;
     /* border: 1px solid rgba(220, 220, 220, 0.388); */
     position: absolute;
-    right: 391px;
+    right: 30.1%;
+    /* right: 391px; */
     border-radius: 2px;
     cursor: pointer;
     transition: all ease-in-out .3s;
@@ -251,13 +256,15 @@
 }
 .third-pos p{
      color: white;
+     font-size: 16px;
 }
 .fourth-pos{
     width: 19.5%;
     height: 300px;
     /* border: 1px solid rgba(220, 220, 220, 0.388); */
     position: absolute;
-    right: 140px;
+    right: 10.2%;
+    /* right: 140px; */
     top: 50px;
     border-radius: 2px;
     cursor: pointer;
@@ -274,6 +281,7 @@
 }
 .fourth-pos p{
     color: white;
+    font-size: 16px;
 }
 
 .accomodationDiv{
@@ -300,8 +308,9 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: center;
+    font-size: 17px;
 }
 .dat1{
     grid-column: span 2;
