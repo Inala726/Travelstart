@@ -61,9 +61,9 @@ const Nav = () => {
             <li className="li1">
               <Link to="/tc" className="links">Trip Catalogue</Link>
             </li>
-            {/* <li className="li1">
+            <li className="li1">
               <Link to="/countries" className="links">Countries</Link>
-            </li> */}
+            </li>
             <li className="li1">
               <Link to="/contact" className="links">Contact</Link>
             </li>
