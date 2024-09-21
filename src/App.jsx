@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Great from './Pages/Great'
 import About from "./Pages/About/About";
 import Contact from './Pages/Contact/Contact';
 import Homepage from "./Pages/Homepage/Homepage";
-import Great from './Pages/Great'
 import TripCatalog from "./Pages/TripCatalog/TripCatalog";
 import Nav from "./Components/Navbar/Nav";
 
