@@ -1,7 +1,7 @@
 import './great.css'
 import Vmount from "../assets/mountain-img.jpg"
-import Vresort from "../assets/header.jpg"
-import Vhotel from "../assets/house-resort.jpg"
+// import Vresort from "../assets/header.jpg"
+// import Vhotel from "../assets/house-resort.jpg"
 import Vgif from "../assets/giphy.webp"
 import Vbus from "../assets/giphy2.webp"
 import Vflight from "../assets/giphy4.webp"
@@ -21,7 +21,7 @@ import Vfamily from "../assets/family-img.jpg"
 import Vculture from "../assets/cultural-img.jpg"
 import Vadventure from "../assets/adventure-img.jpg"
 import Vluxury from "../assets/luxury-img.jpg"
-import Hotel from "../../public/hotel.json"
+// import Hotel from "../../public/hotel.json"
 
 // import Vimg1 from "../assets/1-img.jpg"
 
