@@ -1,11 +1,38 @@
 import { useState, useEffect, useRef } from 'react';
 import './Homepage.css'
+import Nav from '../../Components/Navbar/Nav';
+
 
 const Homepage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeRunning = 3000;
   const timeAutoNext = 7000;
   const carouselRef = useRef(null);
+  const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    fetch("/data.json") 
+      .then((response) => response.json())
+      .then((jsonData) => setData(jsonData))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
+  useEffect(() => {
+    if (searchTerm === "") {
+      setFilteredData([]);
+    } else {
+      const filteredItems = data.filter((item) =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase()) || item.continent.toLowerCase().includes(searchTerm.toLowerCase)
+      );
+      setFilteredData(results);
+    }
+  }, [searchTerm, data]);
+
+
+
+
 
   const sliderItems = [
     { img: 'https://assets.codepen.io/3685267/timed-cards-5.jpg', title: 'TIME TO TRAVEL'},
@@ -42,6 +69,7 @@ const Homepage = () => {
 
   return (
         <div className="main">
+              <Nav/>
              <div className="carousel" ref={carouselRef}>
       <div className="list">
         {sliderItems.map((item, index) => (
@@ -54,9 +82,9 @@ const Homepage = () => {
               Plan your perfect getaway and embark on new adventures.
               Let us turn your dream vacation into reality
               </div>
-              <div className="buttons">
+              {/* <div className="buttons">
                 <button className='title-button'>SEE MORE</button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
