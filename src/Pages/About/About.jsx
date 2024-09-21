@@ -16,7 +16,6 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <Nav/>  
       <section className="about-section">
         <div className="overlay">
           <h1>About Us</h1>

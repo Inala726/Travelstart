@@ -69,7 +69,6 @@ const Homepage = () => {
   return (
 
         <div className="main">
-              <Nav/>
              <div className="carousel" ref={carouselRef}>
       <div className="list">
         {sliderItems.map((item, index) => (

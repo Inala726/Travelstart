@@ -10,32 +10,37 @@ const Nav = () => {
 
   useEffect(() => {
     const header = document.querySelector("header");
-    const headerHeight = header.offsetHeight + 30;
 
-    const handleScroll = () => {
-      const windowTop = window.pageYOffset;
+    // Ensure that the header element exists before accessing its properties
+    if (header) {
+      const headerHeight = header.offsetHeight + 30;
 
-      if (windowTop >= headerHeight) {
-        setIsSticky(true);
-        if (windowTop < lastScrollTop) {
-          setIsVisible(true);
+      const handleScroll = () => {
+        const windowTop = window.pageYOffset;
+
+        if (windowTop >= headerHeight) {
+          setIsSticky(true);
+          if (windowTop < lastScrollTop) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
         } else {
-          setIsVisible(false);
+          setIsSticky(false);
+          setIsVisible(true);
         }
-      } else {
-        setIsSticky(false);
-        setIsVisible(true);
-      }
 
-      setLastScrollTop(windowTop);
-    };
+        setLastScrollTop(windowTop);
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, [lastScrollTop]);
+
   return (
     <>
       <nav className="Nav1">
@@ -45,18 +50,18 @@ const Nav = () => {
           }`}
         >
           <Link to="/">
-          <div className="logo"></div>
+            <div className="logo"></div>
           </Link>
 
           <ul className="ul1">
             <li className="li1">
-              <Link to= "/">Home</Link>
-              </li>
-            <li className="li1">
-              <Link to= "/tc">Trip Catalogue</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="li1">
-              <Link to= "/countries">Countries</Link>
+              <Link to="/tc">Trip Catalogue</Link>
+            </li>
+            <li className="li1">
+              <Link to="/countries">Countries</Link>
             </li>
             <li className="li1">
               <Link to="/contact">Contact</Link>
