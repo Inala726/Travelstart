@@ -11,9 +11,9 @@ const App = () => {
 
     <div className="MAIN">
     {/* <Great/> */}
-    {/* <TripCatalog/> */}
+    <TripCatalog/>
     {/* <Accomodations/> */}
-    <Homepage/>
+    {/* <Homepage/> */}
     {/* <About/> */}
     </div>
  

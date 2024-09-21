@@ -7,10 +7,7 @@ import Rate1 from "../../assets/ratings/rating-40.png";
 import Rate2 from "../../assets/ratings/rating-50.png";
 
 const TripCatalog = () => {
-  //   Users should be able to sort the trip catalog based on various criteria, such
-  // as price, popularity, or alphabetical order. Optionally, users should be able
-  // to filter trips based on specific attributes on date, price range, destination
-  // type, duration, and rating
+ 
   const [priceRange, setPriceRange] = useState("All");
   const [popularity, setPopularity] = useState("All");
   const [alphabetical, setAlphabetical] = useState("All");
@@ -116,27 +113,27 @@ const TripCatalog = () => {
         <div className="tripContent">
           <div className="beach-all">
             {filterTrips.map((location) => (
-              // <Trip
-              //   image={location.image}
-              //   description={location.description}
-              //   activities={location.activity}
-              //   price={location.price}
-              //   destination={location.destination}
-              //   Popularity={location.popularity}
-              //   rating={location.rating === "4" ? {Rate1} : {Rate1}}
-              //   name={location.title}
-              // />
               <Trip
-                image={Vlog}
-                description="Love Love Love Love Depression Depression Dpression Depression Depression."
-                activities="Paragliding, Skiing, Paragliding,  Skiing"
-                price="4500"
-                destination="Madagascar"
-                Popularity="Very Popular"
-                rating={Rate2}
-                name="Pack up that lingerie and tour feeling sexy"
-                // function ={() => {}}
+                image={location.image}
+                description={location.description}
+                activities={location.activity}
+                price={location.price}
+                destination={location.destination}
+                Popularity={location.popularity}
+                rating={location.rating === "4" ? {Rate1} : {Rate1}}
+                name={location.title}
               />
+              // <Trip
+              //   image={Vlog}
+              //   description="Love Love Love Love Depression Depression Dpression Depression Depression."
+              //   activities="Paragliding, Skiing, Paragliding,  Skiing"
+              //   price="4500"
+              //   destination="Madagascar"
+              //   Popularity="Very Popular"
+              //   rating={Rate2}
+              //   name="Pack up that lingerie and tour feeling sexy"
+                // function ={() => {}}
+              // />
             ))}
           </div>
         </div>
