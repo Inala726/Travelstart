@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@
 .MAIN{
   width: 100%;
   height: max-content;
-  background-color: rgb(8, 8, 8);
-  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
 }

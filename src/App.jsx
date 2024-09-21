@@ -11,15 +11,27 @@ const App = () => {
   return (
     <>
 
+    {/* <div className="MAIN">
+    <TripCatalog/>
+    </div>  */}
+    {/* <div className="MAIN">
+    <Great/> 
+    </div> */}
     <div className="MAIN">
+ <Accomodations/>
+    </div>
+   {/* <Homepage/> */}
     {/* <Great/> */}
     {/* <TripCatalog/> */}
     {/* <Accomodations/> */}
+    {/* <div>
     <Homepage/>
-    </div>
+    </div> */}
+    {/* <About/> */}
+    {/* </div> */}
  
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
