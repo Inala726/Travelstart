@@ -47,9 +47,11 @@
   right: 0; /* Changed from left: 0 to right: 0 */
   height: 100vh;
   width: 300px;
-  background-color: #f1f1f1;
+  background-color: black;
+  backdrop-filter: blur(3);
   transform: translateX(100%); /* Changed from -100% to 100% */
   transition: transform 0.3s ease-in-out;
+  padding-left: 40px;
 }
 
 .menu.open {
@@ -69,7 +71,7 @@
 
 .menu a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 1.2rem;
 }
 
@@ -87,7 +89,7 @@
   z-index: 10;
   position: fixed;
   top: 1rem;
-  right: 9rem;
+  right: 5rem;
 }
 .hamburger-button span {
   width: 2rem;
@@ -132,4 +134,61 @@
 .hamburger-button.open {
   transition-duration: .5s;
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 629px) {
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    position: fixed;
+    top: 1rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    position: fixed;
+    top: 1rem;
+    right:2rem;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    position: fixed;
+    top: 1rem;
+    right:1rem;
+}
 }
