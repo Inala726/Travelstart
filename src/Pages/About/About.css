@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  animation: slideInTop 1.5s ease-out forwards;
+  /* animation: slideInTop 1.5s ease-out forwards; */
 }
 
 .overlay {
@@ -29,7 +29,7 @@ body {
     top: 0;
     left: 0;
     width: 100%; /* Cover entire width */
-    height: 100%; /* Cover entire height */
+    height: 30vh; /* Cover entire height */
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.389), rgb(6, 6, 6));/* Darken the background with transparency */
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ body {
     width: 100%;
     display: flex;
     gap: 100px;
-    animation: slideInLeft 1.5s ease-out forwards;
+    /* animation: slideInLeft 1.5s ease-out forwards; */
   }
   
   .firstpicoverlay {

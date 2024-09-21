@@ -43,31 +43,32 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="Nav1">
+      <nav className="Nav1"></nav>
+
         <header
           className={`${isSticky ? "cs_gescout_sticky" : ""} ${
             isVisible ? "cs_gescout_show" : ""
           }`}
         >
-          <Link to="/">
+          <Link to="/" className="links">
             <div className="logo"></div>
           </Link>
 
           <ul className="ul1">
             <li className="li1">
-              <Link to="/">Home</Link>
+              <Link to="/" className="links">Home</Link>
             </li>
             <li className="li1">
-              <Link to="/tc">Trip Catalogue</Link>
+              <Link to="/tc" className="links">Trip Catalogue</Link>
             </li>
             <li className="li1">
-              <Link to="/countries">Countries</Link>
+              <Link to="/countries" className="links">Countries</Link>
             </li>
             <li className="li1">
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" className="links">Contact</Link>
             </li>
             <li className="li1">
-              <Link to="/about">About</Link>
+              <Link to="/about" className="links">About</Link>
             </li>
           </ul>
 
@@ -98,7 +99,6 @@ const Nav = () => {
             <Hamburger />
           </div>
         </header>
-      </nav>
     </>
   );
 };

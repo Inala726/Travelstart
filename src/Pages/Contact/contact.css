@@ -5,33 +5,24 @@ body {
   font-family: "Roboto Slab", serif;
 }
 .cont {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
   background-image: url("../../assets/saudi.jpg");
-  height: 350px;
-  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.699);
+  background-blend-mode: darken;
   background-position: center;
-}
-.overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.753);
-  padding: 20px;
-  z-index: 10;
-  width: 100%;
-  height: 350px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  color: white;
-  animation: slideInTop 1.5s ease-out forwards;
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.389), rgb(6, 6, 6)); */
-}
-.overlay .text {
-  gap: 10px;
+  padding: 50px;
   display: flex;
+  justify-content: baseline;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 100px;
 }
-.overlay .text h1 {
+
+.cont h1{
+  font-size: 50px;
   text-transform: uppercase;
 }
 .txt {
@@ -115,14 +106,14 @@ body {
   flex-direction: column;
 }
 
-.input,
+.inputs,
 textarea {
   margin: 1em 0 1em 0;
   width: 300px;
   position: relative;
 }
 
-.input input,
+.inputs input,
 textarea {
   font-size: 100%;
   padding: 0.7em;
@@ -136,7 +127,7 @@ textarea {
   resize: none;
 }
 
-.input label {
+.inputs label {
   font-size: 100%;
   position: absolute;
   left: 0;
@@ -148,15 +139,15 @@ textarea {
   text-transform: uppercase;
 }
 
-.input :is(input:focus, input:valid) ~ label {
+.inputs :is(input:focus, input:valid) ~ label {
   transform: translateY(-50%) scale(0.9);
   margin: 0em;
   padding: 0.4em;
   background: transparent;
 }
 
-.input textarea:focus ~ label,
-.input textarea:valid ~ label {
+.inputs textarea:focus ~ label,
+.inputs textarea:valid ~ label {
   transform: translateY(-50%) scale(0.9);
   margin: 0em;
   padding: 0.4em;

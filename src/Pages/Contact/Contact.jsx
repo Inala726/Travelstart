@@ -1,25 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.css";
 import { GrLocation } from "react-icons/gr";
 import { LuPhoneCall } from "react-icons/lu";
 import { LuMailOpen } from "react-icons/lu";
-import Location from "./Location";
-import swal from "sweetalert";
+import Location from "./Location"; // Geolocation API component
+import swal from "sweetalert"; // SweetAlert for notifications
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // SweetAlert for feedback form submission
+  const handleFeedback = (e) => {
+    e.preventDefault(); // Prevents form submission from reloading the page
     swal({
       title: "Feedback Submitted!",
       text: "Thank you for your feedback!",
@@ -29,15 +19,12 @@ const Contact = () => {
 
   return (
     <>
+      {/* Contact Us Section */}
       <div className="cont">
-        <div className="overlay">
-          <div className="text">
             <h1>Contact Us</h1>
-            <p>We are here and always happy to help</p>
-          </div>
         </div>
-      </div>
 
+      {/* Contact Details */}
       <div className="three">
         <div className="box">
           <GrLocation className="icon" />
@@ -46,7 +33,7 @@ const Contact = () => {
           <p>Rivers State, Nigeria</p>
         </div>
         <div className="box">
-          <LuPhoneCall color = "rgb(20, 143, 162)" className="icon" />
+          <LuPhoneCall className="icon" />
           <h3>Phone Number(s)</h3>
           <p>(+234) 814 234 7750</p>
           <p>(+234) 808 097 5645</p>
@@ -59,52 +46,56 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* Feedback Form and Geolocation */}
       <div className="flex">
+        {/* Geolocation API Component */}
         <div className="location">
           <Location />
         </div>
 
-        <div className="form">
+        {/* Feedback Form */}
+        <div className="form" id="form">
           <div className="container">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleFeedback}>
               <div className="descr">
                 <h2>Leave Your Feedback</h2>
               </div>
 
-              <div className="input">
+              {/* Name Input */}
+              <div className="inputs">
                 <input
+                  required
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
                   autoComplete="off"
                 />
                 <label htmlFor="name">Name</label>
               </div>
 
-              <div className="input">
+              {/* Email Input */}
+              <div className="inputs">
                 <input
+                  required
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
                   autoComplete="off"
                 />
                 <label htmlFor="email">Email</label>
               </div>
 
-              <div className="input">
+              {/* Message Input */}
+              <div className="inputs">
                 <textarea
-                  name="message" 
-                  value={formData.message} 
-                  onChange={handleChange} 
-                  required 
+                  required
+                  cols="30"
+                  rows="4"
+                  id="message"
+                  name="message"
                 ></textarea>
                 <label htmlFor="message">Message</label>
               </div>
 
+              {/* Submit Button */}
               <button type="submit">Send Message →</button>
             </form>
           </div>
