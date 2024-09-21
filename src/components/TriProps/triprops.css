@@ -6,7 +6,7 @@
 .beach-div{
     width: 100%;
     height: max-content;
-    /* border: solid red; */
+    cursor: pointer;
 }
 .beach-div img{
     width: 100%;

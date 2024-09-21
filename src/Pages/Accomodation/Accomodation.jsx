@@ -5,13 +5,15 @@ import Vresort1 from "../../assets/resort3.jpg"
 import Vme from "../../assets/Hotel-images/ukhotel.jpg"
 import Vme1 from "../../assets/Hotel-images/barca.webp"
 import Vme2 from "../../assets/Hotel-images/francehotel.jpg"
+import Nav from '../../Components/Navbar/Nav'
 // import Hotel from "../../../public/hotel.json"
 
 
 const Accomodations = () => {
     return(
         <>
-
+        
+        <Nav/>
        <section className='acc-hero'
         style={{
             backgroundImage: `url(${Vresort2})`,

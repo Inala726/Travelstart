@@ -5,6 +5,7 @@ import Vlog from "../../assets/header.jpg";
 import Trip from "../../components/TriProps/Trip";
 import Rate1 from "../../assets/ratings/rating-40.png";
 import Rate2 from "../../assets/ratings/rating-50.png";
+import Nav from "../../Components/Navbar/Nav";
 
 const TripCatalog = () => {
  
@@ -34,12 +35,12 @@ const TripCatalog = () => {
     ...new Set(Data.map((trip) => trip.popularity)),
   ];
 
-  const filteredAlphabetical = ["Alphabet", ...new Set(Data.map(trip => trip.destination[0]))];
+  const filteredAlphabetical = ["Alphabetical", ...new Set(Data.map(trip => trip.destination[0]))];
 
   const filteredDate = ["Dates", 
     ...new Set(Data.map((trip) => trip.date))
   ];
-  const fileteredTripType = [
+  const filteredTripType = [
     "Destination Type",
     ...new Set(Data.map((trip) => trip.destinationType)),
   ];
@@ -96,6 +97,7 @@ const TripCatalog = () => {
 
   return (
     <>
+    <Nav/>
       <div className="tripDiv">
         <div
           className="tripHeader"
@@ -112,11 +114,95 @@ const TripCatalog = () => {
         </div>
 
         <div className="sort-cart">
-          <p>Date</p>
-          <p>Price Range</p>
-          <p>Destination type</p>
-          <p>Duration</p>
-          <p>Rating</p>
+          <p><select
+              id="option"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            >
+              {filteredDate.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+            </p>
+          <p><select
+              id="option"
+              value={priceRange}
+              onChange={(e) => setPriceRange(e.target.value)}
+            >
+              {priceRanges.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+            </p>
+          <p>
+          <select
+              id="option"
+              value={tripType}
+              onChange={(e) => setTripType(e.target.value)}
+            >
+              {filteredTripType.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+          </p>
+          <p>
+          <select
+              id="option"
+              value={duration}
+              onChange={(e) => setDuration(e.target.value)}
+            >
+              {filteredDuration.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+          </p>
+          <p>
+          <select
+              id="option"
+              value={rating}
+              onChange={(e) => setRating(e.target.value)}
+            >
+              {filteredRating.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+          </p>
+        <p>
+        <select
+              id="option"
+              value={popularity}
+              onChange={(e) => setPopularity(e.target.value)}
+            >
+              {filteredPopularity.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+        </p>
+        <p>
+        <select
+              id="option"
+              value={alphabetical}
+              onChange={(e) => setAlphabetical(e.target.value)}
+            >
+              {filteredAlphabetical.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
+            </select>
+        </p>
         </div>
 
         <div className="tripContent">

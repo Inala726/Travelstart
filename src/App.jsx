@@ -5,34 +5,25 @@ import Great from "./pages/great"
 import Trip from "./components/TriProps/Trip"
 // import TripCatalog from './pages/TripCatalog/TripCatalog'
 // import Great from "./pages/Great"
-// import Accomodations from "./pages/Accomodation"
 // import Great from "./pages/Great"
-import Accomodations from "./pages/Accomodation"
+import {BrowserRouter as Router, Routes, Route} from react-router-dom
 import Homepage from "./pages/Homepage/Homepage"
 import About from "./pages/About/About"
+import Footer from "./components/Footer/Footer"
 
 const App = () => {
   return (
     <>
 
-    {/* <div className="MAIN">
-    <TripCatalog/>
-    </div>  */}
-    {/* <div className="MAIN">
-    <Great/> 
-    </div> */}
+    
     <div className="MAIN">
- <Accomodations/>
+       <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+        <Footer/>
+       </Router>
     </div>
-   {/* <Homepage/> */}
-    {/* <Great/> */}
-    <TripCatalog/>
-    {/* <Accomodations/> */}
-    {/* <div>
-    <Homepage/>
-    </div> */}
-    {/* <About/> */}
-    {/* </div> */}
  
     </>
   )

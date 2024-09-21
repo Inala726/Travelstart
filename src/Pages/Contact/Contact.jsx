@@ -5,6 +5,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { LuMailOpen } from "react-icons/lu";
 import Location from "./Location";
 import swal from "sweetalert";
+import Nav from "../../Components/Navbar/Nav";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +30,8 @@ const Contact = () => {
 
   return (
     <>
+
+    <Nav/>
       <div className="cont">
         <div className="overlay">
           <div className="text">

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './Homepage.css'
+import Nav from '../../Components/Navbar/Nav';
 
 const Homepage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +42,9 @@ const Homepage = () => {
   };
 
   return (
+
         <div className="main">
+              <Nav/>
              <div className="carousel" ref={carouselRef}>
       <div className="list">
         {sliderItems.map((item, index) => (

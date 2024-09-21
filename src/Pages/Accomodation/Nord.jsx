@@ -1,11 +1,13 @@
 import './Accomodation.css'
 import Vresort2 from "../assets/resort2.jpg"
+import Nav from '../../Components/Navbar/Nav'
 
 
 const Accomodations = () => {
     return(
         <>
 
+        <Nav/>
        <section className='acc-hero'
         style={{
             backgroundImage: `url(${Vresort2})`,

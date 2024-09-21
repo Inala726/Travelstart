@@ -48,7 +48,7 @@ const Nav = () => {
           <div className="logo"></div>
 
           <ul className="ul1">
-            <li className="li1">Home</li>
+            <li className="li1"><Link></Link></li>
             <li className="li1">Trip Catalogue</li>
             <li className="li1">Countries</li>
             <li className="li1">Contact</li>

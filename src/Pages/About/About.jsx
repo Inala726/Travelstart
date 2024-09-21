@@ -11,6 +11,7 @@ import { FaCheck } from "react-icons/fa";
 import plane from '../../assets/plane.avif'
 import suitcase from '../../assets/newsuitcase.png'
 import Nav from '../../Components/Navbar/Nav';
+import Footer from "../../components/Footer/Footer"
 const About = () => {
   return (
     <>
@@ -132,6 +133,7 @@ const About = () => {
         <div className="imgdiv"><img src={suitcase} alt="" className='suitcase'/></div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

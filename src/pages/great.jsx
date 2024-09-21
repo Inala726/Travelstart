@@ -22,12 +22,14 @@ import Vculture from "../assets/cultural-img.jpg"
 import Vadventure from "../assets/adventure-img.jpg"
 import Vluxury from "../assets/luxury-img.jpg"
 import Hotel from "../../public/hotel.json"
+import Nav from '../Components/Navbar/Nav'
 
 // import Vimg1 from "../assets/1-img.jpg"
 
 const Great = () => {
     return (
         <>
+        <Nav/>
         <div>
             <section className='hero-great' style={{
             backgroundImage: `url(${Vmount})`,
@@ -207,55 +209,6 @@ const Great = () => {
                     </div>
                  </div>
             </section> 
-
-            {/* <section>
-              <h1>Activities to do In Asia</h1>
-              <div>
-                <div>
-                    <p>DAY TRIPS & EXCURSIONS</p>
-                    <p>TOURS & SIGHTSEEING</p>
-                    <p>Reservations</p>
-                    <p>CULTURAL & THEME TOURS</p>
-                </div>
-                <div>
-                    <div>
-                        <p>SHOW ONLY</p>
-                        <div>CULTURAL TOURS</div>
-                    </div>
-                    <div>
-                        <button>VIEW ALL</button>
-                    </div>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <div>
-                            <div>
-                                <div>
-                                    <p>OAHU DAY TRIP</p>
-                                    <p>MAUI,HAWAII</p>
-                                </div>
-                                <img src="" alt="" />
-                            </div>
-                            <p>Oahu Day Trip to Pearl Harbor, Honolulu</p>
-                            <p>and Punchbowl </p>
-                        </div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                     <div></div>
-                     <div></div>
-                     <div></div>
-                     <div></div>
-                </div>
-              </div>
-            </section> */}
 
             <div className="accomodationDiv">
                 <h1 style={{
