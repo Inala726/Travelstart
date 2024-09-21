@@ -8,11 +8,11 @@ import Rate2 from "../../assets/ratings/rating-50.png"
 
 const TripCatalog = () => {
   let imageStuff = "";
-  if(Data.rating === "4"){
-    imageStuff = {Rate1}
-  }else if(Data.rating === "5"){
-    imageStuff = {Rate2}
-  }
+  // if(Data.rating === "4"){
+  //   imageStuff = {Rate1}
+  // }else if(Data.rating === "5"){
+  //   imageStuff = {Rate2}
+  // }
   
   return (
     <>
@@ -30,6 +30,15 @@ const TripCatalog = () => {
             <h3>TOUR WITH US</h3>
           </div>
         </div>
+
+        <div className="sort-cart">
+          <p>Date</p>
+          <p>Price Range</p>
+          <p>Destination type</p>
+          <p>Duration</p>
+          <p>Rating</p>
+        </div>
+
         <div className="tripContent">
 
           <div className="beach-all">
