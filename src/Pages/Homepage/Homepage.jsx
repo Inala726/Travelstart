@@ -23,7 +23,7 @@ const Homepage = () => {
       setFilteredData([]);
     } else {
       const filteredItems = data.filter((item) =>
-        item.title.toLowerCase().includes(searchTerm.toLowerCase()) || item.continent.toLowerCase().includes(searchTerm.toLowerCase)
+        item.title.toLowerCase().includes(searchTerm.toLowerCase()) || item.continent.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredData(results);
     }

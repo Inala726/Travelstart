@@ -1,7 +1,7 @@
 import "./Nav.css";
 import { useState, useEffect } from "react";
 import Hamburger from "../Hamburger/Hamburger";
-import { Link } from "react-router-dom"; 
+// import { Link } from "react-router-dom"; 
 
 const Nav = () => {
   const [isSticky, setIsSticky] = useState(false);

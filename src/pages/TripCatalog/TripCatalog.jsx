@@ -8,7 +8,6 @@ import Rate2 from "../../assets/ratings/rating-50.png";
 import Nav from "../../Components/Navbar/Nav";
 
 const TripCatalog = () => {
- 
   const [priceRange, setPriceRange] = useState("All");
   const [popularity, setPopularity] = useState("All");
   const [alphabetical, setAlphabetical] = useState("All");
@@ -17,7 +16,7 @@ const TripCatalog = () => {
   const [duration, setDuration] = useState("All");
   const [rating, setRating] = useState("All");
 
-    const priceRanges = [
+  const priceRanges = [
     "Prices",
     "$500 - $1000",
     "$1000 - $2000",
@@ -26,7 +25,7 @@ const TripCatalog = () => {
     "$4000 - $5000",
     "$5000 - $6000",
     "$6000 - $7000",
-    "$7000+"
+    "$7000+",
   ];
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -35,11 +34,12 @@ const TripCatalog = () => {
     ...new Set(Data.map((trip) => trip.popularity)),
   ];
 
-  const filteredAlphabetical = ["Alphabetical", ...new Set(Data.map(trip => trip.destination[0]))];
-
-  const filteredDate = ["Dates", 
-    ...new Set(Data.map((trip) => trip.date))
+  const filteredAlphabetical = [
+    "Alphabetical",
+    ...new Set(Data.map((trip) => trip.destination[0])),
   ];
+
+  const filteredDate = ["Dates", ...new Set(Data.map((trip) => trip.date))];
   const filteredTripType = [
     "Destination Type",
     ...new Set(Data.map((trip) => trip.destinationType)),
@@ -54,18 +54,17 @@ const TripCatalog = () => {
   ];
 
   const filterTrips = Data.filter((tour) => {
-    const matchesAlphabet =
-    alphabetical === "All" || tour.destination[0].toUpperCase() === alphabetical.toUpperCase();
-    const matchesPopularity = 
-    popularity !== "All" && tour.popularity === popularity;
     const matchesDate =
-    date !== "All" && tour.date === date;
-    const matchesTripType =
-    tripType !== "All" && tour.destinationType === tripType;
-    const matchesDuration =
-    duration !== "All" && tour.duration === duration;
-    const matchesRating =
-    rating !== "All" && tour.rating === rating;
+    date === "All" || tour.date === date;
+
+const matchesTripType =
+    tripType === "All" || tour.destinationType === tripType;
+
+const matchesDuration =
+    duration === "All" || tour.duration === duration;
+
+const matchesRating =
+    rating === "All" || tour.rating === rating;
 
     const matchesPriceRange = (() => {
       switch (priceRange) {
@@ -89,15 +88,21 @@ const TripCatalog = () => {
           return true;
       }
     })();
-   
-    
-    return matchesDate || matchesDuration || matchesPopularity || matchesPriceRange || matchesRating || matchesTripType || matchesAlphabet
 
-  })
+    return (
+      matchesDate &&
+      matchesDuration &&
+      matchesPopularity &&
+      matchesPriceRange &&
+      matchesRating &&
+      matchesTripType &&
+      matchesAlphabet
+    );
+  });
 
   return (
     <>
-    <Nav/>
+      <Nav />
       <div className="tripDiv">
         <div
           className="tripHeader"
@@ -114,7 +119,8 @@ const TripCatalog = () => {
         </div>
 
         <div className="sort-cart">
-          <p><select
+          <p>
+            <select
               id="option"
               value={date}
               onChange={(e) => setDate(e.target.value)}
@@ -125,8 +131,9 @@ const TripCatalog = () => {
                 </option>
               ))}
             </select>
-            </p>
-          <p><select
+          </p>
+          <p>
+            <select
               id="option"
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
@@ -137,9 +144,9 @@ const TripCatalog = () => {
                 </option>
               ))}
             </select>
-            </p>
+          </p>
           <p>
-          <select
+            <select
               id="option"
               value={tripType}
               onChange={(e) => setTripType(e.target.value)}
@@ -152,7 +159,7 @@ const TripCatalog = () => {
             </select>
           </p>
           <p>
-          <select
+            <select
               id="option"
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
@@ -165,7 +172,7 @@ const TripCatalog = () => {
             </select>
           </p>
           <p>
-          <select
+            <select
               id="option"
               value={rating}
               onChange={(e) => setRating(e.target.value)}
@@ -177,8 +184,8 @@ const TripCatalog = () => {
               ))}
             </select>
           </p>
-        <p>
-        <select
+          <p>
+            <select
               id="option"
               value={popularity}
               onChange={(e) => setPopularity(e.target.value)}
@@ -189,9 +196,9 @@ const TripCatalog = () => {
                 </option>
               ))}
             </select>
-        </p>
-        <p>
-        <select
+          </p>
+          <p>
+            <select
               id="option"
               value={alphabetical}
               onChange={(e) => setAlphabetical(e.target.value)}
@@ -202,7 +209,7 @@ const TripCatalog = () => {
                 </option>
               ))}
             </select>
-        </p>
+          </p>
         </div>
 
         <div className="tripContent">
@@ -215,7 +222,7 @@ const TripCatalog = () => {
                 price={location.price}
                 destination={location.destination}
                 Popularity={location.popularity}
-                rating={location.rating === "4" ? {Rate1} : {Rate1}}
+                rating={location.rating === "4" ? { Rate1 } : { Rate1 }}
                 name={location.title}
               />
               // <Trip
@@ -227,7 +234,7 @@ const TripCatalog = () => {
               //   Popularity="Very Popular"
               //   rating={Rate2}
               //   name="Pack up that lingerie and tour feeling sexy"
-                // function ={() => {}}
+              // function ={() => {}}
               // />
             ))}
           </div>
