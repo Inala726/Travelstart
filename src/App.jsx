@@ -4,6 +4,10 @@ import Accomodations from "./pages/Accomodation"
 import Great from "./pages/great"
 import Homepage from "./pages/Homepage/Homepage"
 import Trip from "./components/TriProps/Trip"
+// import TripCatalog from './pages/TripCatalog/TripCatalog'
+// import Great from "./pages/Great"
+// import Accomodations from "./pages/Accomodation"
+import Homepage from "./pages/Homepage/Homepage"
 
 const App = () => {
   return (
@@ -19,6 +23,13 @@ const App = () => {
  <Accomodations/>
     </div> */}
    {/* <Homepage/> */}
+    {/* <Great/> */}
+    {/* <TripCatalog/> */}
+    {/* <Accomodations/> */}
+    <div>
+    <Homepage/>
+    </div>
+ 
     </>
   )
 }
