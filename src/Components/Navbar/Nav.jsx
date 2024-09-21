@@ -49,7 +49,7 @@ const Nav = () => {
             isVisible ? "cs_gescout_show" : ""
           }`}
         >
-          <Link to="/">
+          <Link to="/" className="link">
             <div className="logo"></div>
           </Link>
 

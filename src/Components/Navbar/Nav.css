@@ -8,9 +8,8 @@
 .Nav1{
     width: 100%;
     /* border: 1px solid white; */
-    background-color: transparent;
     position: fixed;
-    z-index: 4;
+    z-index: 2;
     color: white;
     display: flex;
     align-items: center;
@@ -65,6 +64,7 @@ header{
 header .ul1{
     width: 50%;
     height: 40px;
+    /* border: 1px solid white; */
     list-style: none;
     display: flex;
     align-items: center;
