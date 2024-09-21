@@ -3,7 +3,7 @@ body {
   color: whitesmoke;
 }
 
-.cont {
+.con{
   height: 500px;
   width: 100%;
   margin: auto;
@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 
-.cont .text .num {
+.con .tex .nu {
   font-size: 52px;
   font-weight: bolder;
 }

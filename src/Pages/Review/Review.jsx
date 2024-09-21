@@ -8,15 +8,14 @@ import img1 from "../../assets/1-img.jpg";
 import img2 from "../../assets/2-img.jpg";
 import img3 from "../../assets/3-img.jpg";
 import img4 from "../../assets/4-img.jpg";
-// import Footer from "../../Components/Footer/Footer";
 
 const ReviewPage = () => {
   return (
     <>
       <Nav />
-      <div className="cont">
-        <div className="text">
-          <p className="num">3,200,000 +</p>
+      <div className="con">
+        <div className="tex">
+          <p className="nu">3,200,000 +</p>
           <h2>Travel Gurus shared their best tips and experiences</h2>
           <h2>And we are waiting for yours</h2>
           <a href="/contact">
@@ -28,7 +27,7 @@ const ReviewPage = () => {
         <div className="question">
           <h2>How does it work</h2>
         </div>
-        <div className="three">
+        <div className="thr">
           <div className="box">
             <div className="icon">
               <CiCircleCheck className="icons" />
@@ -137,7 +136,6 @@ const ReviewPage = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   );
 };
